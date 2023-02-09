@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GICAandCo</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="styleHP.css">
+</head>
+<body>
+
+    <header class="header clearfix">
+        <a href="" class="header_logo"><img src="e196a112bf9c0bb1c99b1d8c1d737255.jpg" alt="" width="85" height="80"></a>
+        <a href="" class="header_icon-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="header_menu">
+            <li class="header_menu_item"><a href="">Item</a></li>
+            <li class="header_menu_item"><a href="">Item</a></li>
+            <li class="header_menu_item"><a href="">Item</a></li>
+        </ul>
+    </header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".header_icon-bar").click(function(event){
+            $(".header_menu").toggleClass('is-open'); 
+            event.preventDefault(); 
+        })
+    }); 
+</script>
+</body>
+</html>
