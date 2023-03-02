@@ -1,16 +1,18 @@
 *{box-sizing: border-box;}
-body {background: lightskyblue;}
+body {background: #6dd5c3;}
 h1{text-align: center; text-decoration: dotted; color: black; font-style: oblique;}
 
 
 .cards{max-width: 1300px; margin: 60px auto; display: flex; flex-wrap: wrap;}
-.card{border: 2px solid black; width: 33.33%; float: left; background:#0080ff; height: 300px;}
+.card{border: 2px solid black; width: 33.33%; float: left; background:darkcyan
+
+  ; height: 300px;}
 .card__image{width: 100%; height: 75%; object-fit: cover;}
-.card__copy{padding: 5px; background:#0080ff; display: flex; align-items: center;}
+.card__copy{padding: 5px; background:darkcyan; display: flex; align-items: center;}
 .card__copy * {text-align: center;}
 a {
     color:black;
-    background-color:#0080ff;
+    background-color:darkcyan;
     text-align: center; 
     font-family: verdana;
     font-size: 19px;
