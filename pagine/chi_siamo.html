@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="chisiamostyle.css">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css" width="85" height="85">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css">
-    <title>GICAandCo/ChiSiamo?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header class="header clearfix">
     <a href="" class="header_logo"><img src="../immagini/logo.jpg" alt="" width="100" height="100"></a>
@@ -59,29 +59,42 @@
             </center>
         </div>
         
-       
     </article>
 
+    <footer class="footer">
+        <div class="footer__content">
+            <h2>GICAandCO</h2>
+            <h4>  Caterina Ferrera  &  Giorgia Parma  </h4>
+            <ul class="socials">
 
-   
-    <footer>
-        <p>social</p>
-    </footer> 
-   </div>
+            <<!--chiedere come fare a collegare il ink della pagina facebook-->
 
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-yahoo"></i></a></li>
+            </ul>
+            <p>CONTATTACI: +39 345 023 39999</p>
+            <p>SCRIVICI ALLE MAIL: GICAandCO@yahoo.it - GICAandCO@gmail.com</p>
+        </div>
+        <div class="footer__bootom">
+            <p>copyright &copy; 2012 GICAandCO. designed by <span>nethunt</span></p>
+        </div>
+    </footer>
     
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"> </script>    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <script>
-    $(document).ready(function(){
+     $(document).ready(function(){
 
         $(".header_icon-bar").click(function(event){
             $(".header_menu").toggleClass('is-open'); 
             event.preventDefault(); 
         })
-    }); 
-       
+    });      
 </script>
 
 </html>

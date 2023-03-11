@@ -1,8 +1,8 @@
 html,body{height:100%;}
-body{background-color: rgba(70, 127, 233, 0.734) ;}
+body{background-color: white}
 .p{line-height: 22px;}
 
-.header{height: 20%; background-image: url();
+.header{height: 20%; background-image: url(../immagini/64258.jpg);
     background-size: cover ;
     background-position: center center;
 
@@ -11,7 +11,7 @@ body{background-color: rgba(70, 127, 233, 0.734) ;}
 .header_menu{float:right; margin:0; padding:0; }
 .header_menu_item{display: inline-block;}
 .header_menu_item a{color:white; display: block; padding: 10px;font-style: oblique;}
-.header_menu_item a:hover{background-image: url();}
+.header_menu_item a:hover{background-color: red;}
 
 .header_icon-bar{display: block;float:right; padding: 30px; display: none;}
 .header_icon-bar span{display: block;height: 4px;width:30px; background-color:red; margin-bottom: 5px}
@@ -22,17 +22,31 @@ background-size: cover;background-position: center center;position: relative;}
 .cover__caption{display: table; height: 100%; width: 100%; position: relative; z-index: 1;}
 .cover__caption__copy{display: table-cell; text-align: center; vertical-align: middle;color: white;}
 
+
 .single__copy{max-width: 1000px; margin: 0px auto;background-color:white; padding: 20px}
 .single__copy h1{text-align: center; font-style:italic;}
 .single__copy img{width: 500px; height: 550px;}
 
 
-@media(max-width: 768px){
-    .central-container{flex-wrap: wrap;}
+.footer{background: rgb(74, 69, 69) ; padding: 0px 4px; color: white; margin-top: 20px;}
+.footer__content {list-style: none; display: flex;align-items: center; justify-content: center; flex-direction: column; text-align: center;}
+.footer__content h2{text-align: center;}
+.footer__content h4{text-align: center;}
+.socials{list-style: none; display: flex; align-items: center; justify-content: center; }
+.socials li{margin: 0 10px;}
+.socials a{text-decoration: none; color: white;}
+.socials a:hover {color: red; }
+.footer__bootom {padding: 14px 0px; text-align: center;}
+.footer__bootom p{word-spacing: 2px; text-transform: capitalize;}
+.footer__bootom span{text-transform: uppercase; opacity: .4; }
+
+
+
+.central-container{flex-wrap: wrap;}
     menu, 
     main, 
     aside{width: 100%;}
-}
+
 /*Tablet*/
 @media(max-width: 998px){
 
