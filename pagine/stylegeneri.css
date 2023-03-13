@@ -19,8 +19,8 @@ a {
 }
 
 .trama__contenuto {display: flex; width: 100%;}
-.trama__contenuto__testo {width: 40%;}
-.trama__contenuto__video {width: 60%;}
+.trama__contenuto__testo {width: 60%;}
+.trama__contenuto__video {width: 40%;}
 .trama__contenuto__video iframe {width: 100%;}
 
 @media (max-width: 768px) {
