@@ -5,84 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GICAandCo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css" width="85" height="85">
     <link rel="stylesheet" href="style_index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css">
-
-    <script> </script>
 </head>
 <body>
+<header class="header">
+    <img src="immagini/logo.jpg" alt="" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">GENERI</a>
+                <ul>
+                    <li><a href="pagine/romantico.html">ROMANTICO</a></li>
+                    <li><a href="pagine/avventura.html">AVVENTURA</a></li>
+                    <li><a href="pagine/commedia.html">COMMEDIA</a></li>
+                    <li><a href="pagine/fantascienza.html">FANTASCENZA</a></li>
+                    <li><a href="pagine/horror.html">HORROR</a></li>
+                </ul>
+                </li>
+                <li><a href="pagine/chi_siamo.html">CHI SIAMO?</a></li> 
+            </ul>
+        </nav>
+</header>
 
-    <header class="header clearfix">
-    <a href="" class="header_logo"><img src="../immagini/logo.jpg" alt="" width="100" height="100"></a>
-        <a href="" class="header_icon-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <ul class="header_menu">
-            <li class="header_menu_item"><a href="pagine/chi_siamo.html"><b>Chi siamo?</b></a></li>
-            <li class="header_menu_item"><a href="pagine/romantico.html"><b>ROMANTICO</b></a></li>
-            <li class="header_menu_item"><a href="pagine/comico.html"><b>COMMEDIA</b></a></li>
-            <li class="header_menu_item"><a href="pagine/avventura.html"><b>AVVENTURA</b></a></li>
-            <li class="header_menu_item"><a href="pagine/fantascienza.html"><b>FANTASCENZA</b></a></li>
-            <li class="header_menu_item"><a href="pagine/horror.html"><b>HORROR</b></a></li>
-        </ul>
 
-    </header>
-    <h1><b>Film in evidenza</b></h1>
-    <div class="main-carousel"data-flickity='{ "cellAlign": "left", "contain": true }'>
-        <div class="carousel-cell"> <img src="immagini/b6b604875cb5d31618e14fa90594ef96.jpg" alt="" height="350" width="350"> </div>
-        <div class="carousel-cell"> <img src="immagini/Legally-Blonde-cover (1).jpg" alt="" height="350" width="350"> </div>
-        <div class="carousel-cell"> <img src="immagini/arton153808 (1).jpg" alt="" height="350" width="350"> </div>
-        <div class="carousel-cell"> <img src="immagini/avatar2r.jpg" alt=""  height="350" width="350" > </div>
-        <div class="carousel-cell"> <img src="immagini/dune-2020-1972321.jpg" alt="" height="350" width="350"> </div>
-        <div class="carousel-cell"> <img src="immagini/it-film (1).png" alt="" height="350" width="350"> </div>
-      </div>
-      <div class="container">
-        <main>
-
-            <a href=""><b>ROMANTICO</a></li>
-                <a href=""><b>COMMEDIA</a></li>
-                <a href=""><b>AVVENTURA</a></li>
-                <a href=""><b>FANTASCIENZA</a></li>
-                <a href=""><b>HORROR</a></li>
-               
-     
-        </main>
-
-        <div class="overlay" id="pop">
-            <div class="popup">
-                <h2>Questo è un popup</h2>
-                <p>Potete utilizzarmi per inserire pubblicità</p>
-                <p>o per fare un annuncio</p>
-                <span id="close">X</span>
-            </div>
-        </div>
-        
-        <script src="app.js"></script>
-        
-        <aside>
-            <img src="immagini/slogan-pubblicitario-ikea.jpg" alt="" height="50" width="60">
-            <img src="immagini/slogan-crodino-1.jpg" alt=""height="50" width="60">
-            <img src="immagini/ronaldinho-nike-just-do-it.jpg" alt=""height="50" width="60">
-        </aside>
-        
-        
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"> </script>    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-
-        $(".header_icon-bar").click(function(event){
-            $(".header_menu").toggleClass('is-open'); 
-            event.preventDefault(); 
-        })
-    }); 
-       
-</script>
 
 
 </body>
