@@ -1,16 +1,16 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box; font-family: "Poppins", sans-serif;}
 
 .container-pagina {max-width: 3000px;}
 
 header {background:red;display: flex; flex-wrap: nowrap; justify-content: space-between;  top: 0; right: 0; left: 0;  width:100%; height: 15%;}
-.logo{display: block; padding: 5px 5px; width: 100px;}
+.logo{padding: 5px 5px; width: 100px;}
 header nav ul{ list-style: none; text-align: center; padding: 10px 10px; width: 100%; max-width: 1200px; margin: auto auto; padding: 0; top: 100%; }
 header nav ul ul{display: none; position: absolute;}
-header nav ul li{position: relative; float: left; width: 40%; text-align: center; margin-right: 40px;}
+header nav ul li{position: relative; text-align: center;}
 header nav ul li:hover ul{display: block;}
 header nav ul li li{position: relative; float: none; width: 100%; border: none;}
 header nav ul li a{display: block; text-decoration: none; color: white; box-sizing: border-box;
-font-size: 1.2em; width: 300px;padding: 15px 20px; margin-left: 30px; margin-right: 40px;}
+font-size: 1.2em;padding: 15px 20px;}
 header nav ul ul li a{font-size: 1rem; }
 header nav ul li:hover a{background: white; color: rgb(252, 0, 0); text-decoration: none; transition: 0.5s;}
 header nav ul ul li:hover a{background: red; color:white;}
@@ -28,7 +28,7 @@ section.cover__caption__copy{display: table-cell; text-align: center; vertical-a
 
 .single__copy{max-width: 1000px; margin: 0px auto;background-color:white; padding: 20px}
 .single__copy h1{text-align: center; font-style:italic;}
-.single__copy img{width: 500px; height: 550px;}
+.single__copy img{width: 60%; height: 80%; object-fit: cover;}
 
 
 .footer{background: rgb(74, 69, 69) ; padding: 0px 4px; color: white; margin-top: 20px;}
@@ -52,7 +52,7 @@ section.cover__caption__copy{display: table-cell; text-align: center; vertical-a
 
 /*Telefono*/
 @media screen and (max-width: 767px){
-    .header nav ul li{ display: block; float: none;}
+    .header nav ul li{ display: block; float: none; flex-direction: column;}
 }
 
 
