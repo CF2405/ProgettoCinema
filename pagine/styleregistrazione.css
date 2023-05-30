@@ -1,8 +1,9 @@
 html,body {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 100px;
     border: #333;
     color: #333;
+    background-color: #5a4166;
 }
 h1 {
     margin: 0;
@@ -12,8 +13,10 @@ h1 {
 }
 form {
     padding: 40px;
-    background: white;
+    background-color: #e2cced;
+    border-radius: 20px;
     border: 4px solid black;
+    border-style: dashed;
     width: 360px;
     margin: 30px auto;
 }
@@ -27,8 +30,7 @@ input {
 }
 button {
     font: 14px 'Open Sans', sans-serif;
-    background-color: orange;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 6px;
     cursor: pointer;
     border: none;

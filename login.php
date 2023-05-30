@@ -1,8 +1,7 @@
 <?php
-	// $db_servername = "localhost";
-	// $db_name = "biblioteca";
-	// $db_username = "root";
-	// $db_password = "";
+	 $db_servername = "localhost";
+	 $db_username = "root";
+	 $db_password = "";
 	require("./data/dati_connessione_db.php");
 	if (isset($_POST["username"])) {$username = $_POST["username"];} else {$username = "";}
 	if (isset($_POST["password"])) {$password = $_POST["password"];} else {$password = "";}
@@ -15,9 +14,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="C:\Users\silvi\OneDrive\Desktop\prova a caso php\styleprovaphp.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="login.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>GiCa & CO - Login</title>
-	<link rel="stylesheet" type="text/css" href="C:\Users\silvi\OneDrive\Desktop\prova a caso php\styleprovaphp.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 
 <body>
@@ -41,7 +40,7 @@
 					<td>Password:</td> <td><input type="password" name="password" value="<?php /*echo $password; */?>" required></td>
 				</tr>
 			</table>
-			<p><input type="submit" value="Accedi"></p>
+			<p><input type="submit" value="ACCEDI"></p>
 		</form>
 		<?php
 			if (isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["tipologia"])) {
