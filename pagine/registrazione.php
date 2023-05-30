@@ -93,39 +93,26 @@
                     if($conn->connect_error){
                         die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
                     }
-
-                   $myquery = "SELECT username 
-						    FROM utente 
-						    WHERE username='$username'";
+                
+                   $myquery = "SELECT username, password 
+						    FROM $tipologia 
+						    WHERE username='$username'
+                            AND password='$password'"; 
                     //echo $myquery;
 
-                    $ris = $conn->query($myquery) or die("<p>Query fallita!</p>");
-                    if ($ris->num_rows > 0) {
-                        echo "Questo username è già stato usato";
-                    } else {
+                    $ris = $conn->query($myquery) or die("<p>Query fallita! ".$conn->error."</p>");
 
-                        $myquery = "INSERT INTO $tipologia (username, password, nome, cognome, email, telefono, comune, indirizzo)
-                                    VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
-
-
-                        if ($conn->query($myquery) === true) {
-                            session_start();
-                            $_SESSION["username"]=$username;
-                            $_SESSION["tipologia"]=$_POST["tipologia"];
-                            
-						    $conn->close();
-
-                            echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
-                            header('Refresh: 5; URL=home.php');
-
-                        } else {
-                            echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
-                        }
-                    
+                    if($ris->num_rows == 0){
+                        echo "<p>Utente non trovato o password errata</p>";
+                        $conn->close();
+                    } 
+                    else {
+                        echo "<p>Utente trovato</p>";
                     }
+                }  
                 }
-            }
-            ?>
+                
+            ?>	
         </p>
     </div>
     <?php 
