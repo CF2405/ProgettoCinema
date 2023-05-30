@@ -1,6 +1,6 @@
 <?php
     require_once("dati/dati_connesione_db.php");
-    new mysqli("localhost", "root", "", "php_film_database");
+    new mysqli("localhost", "root", "", "db.sql");
     ?>
 
 <!DOCTYPE html>
