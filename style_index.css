@@ -1,7 +1,7 @@
 * {box-sizing: border-box; font-family: "Poppins", sans-serif; margin:0; padding: 0;}
 body{ overflow-x: hidden; min-height: 30000px; background-color: whitesmoke;}
 
-.container-pagina {max-width: 3000px;}
+.container-pagina {max-width: 1500px;}
 
 /* da aggiungere: i film in evidenza e delle caselle che ti collegano ai generi e aggiungere ai generi l'header e il footer*/
 
