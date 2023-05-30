@@ -39,7 +39,37 @@
 			</table>
 			<div class="accedi"><input type="submit" value="ACCEDI"></div>	
 		</form>
+<<<<<<< Updated upstream
 
+=======
+		
+		<?php
+			if (isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["tipologia"])) 
+			{
+				$conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
+				if($conn->connect_error){
+					die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
+				}
+
+				$myquery = "SELECT username, password 
+							FROM $tipologia 
+							WHERE username='$username'
+								AND password='$password'";
+
+				$ris = $conn->query($myquery) or die("<p>Query fallita! ".$conn->error."</p>");
+
+				if($ris->num_rows == 0){
+					echo "<p>Utente non trovato o password errata</p>";
+					$conn->close();
+				} 
+				else {
+					echo "<p>Utente trovato</p>";
+				}
+				
+			}
+			
+		?>	
+>>>>>>> Stashed changes
 	</div>
 
 	<?php 
