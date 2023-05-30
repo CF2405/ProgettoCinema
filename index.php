@@ -87,7 +87,7 @@
                 <a href="pagine/registrazione.php">ROMANTICO</a>
             </div>
             <div class="romantico">
-                <a href="pagine/ricercafilm.php">ROMANTICO</a>
+                <a href="pagine/login.php">ROMANTICO</a>
             </div>
         </section>
     </div>

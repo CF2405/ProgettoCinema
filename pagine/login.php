@@ -1,8 +1,5 @@
 <?php
-	 $db_servername = "localhost";
-	 $db_username = "root";
-	 $db_password = "";
-	require("./data/dati_connessione_db.php");
+    require("../dati/dati_connesione_db.php");
 	if (isset($_POST["username"])) {$username = $_POST["username"];} else {$username = "";}
 	if (isset($_POST["password"])) {$password = $_POST["password"];} else {$password = "";}
 	if (isset($_POST["tipologia"])) {$tipologia = $_POST["tipologia"];} else {$tipologia = "";}
