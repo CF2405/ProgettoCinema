@@ -2,43 +2,46 @@
     box-sizing: border-box;
 }	
 body {
-	background-image: url("https://www.xtrafondos.com/wallpapers/resoluciones/23/superman-adios-fanart_1280x720_11421.jpg");
-	font-family: 'Open Sans', Verdana, 'DejaVu Sans', Arial, sans-serif; 
-    border-radius: 20px;
-    border: 2px black;
-    border-style: groove;
-	margin: 180px;
+	background-image: url("https://cdn.wallpapersafari.com/6/86/GIXWCM.jpg");
+	margin: 150px;
 	margin-left: 300px;
 	margin-right: 300px;
 	padding-bottom: 50px;
 }
-.titoli{
-	text-align: center;
-	font-family: monospace;
-	font-stretch: expanded;
-	font-size: 23px;
+h1,h2{
+	letter-spacing: 2px;
+	text-shadow: 0 0 3px darkblue;
+	font-family: 'Lucida Handwriting';
 }
-/*contenuto è il contenuto del body*/
 .contenuto {
-	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin-top: 100px;
 }
-.tab_input{
-	text-align: center;
-	margin-top: 70px;
-	padding-left: 350px;
-	margin-block-start: 40px;
+form{
+	font-family: 'Sofia';
 	font-size: 20px;
+	padding: 100px ;
+	border: 2px;
+	background-color: white;
+	border-radius: 5%;
+	opacity: 0.6;
 }
-/*bottone accedi*/
+.tab_innput{
+	width: 100%;
+	text-align: center;
+}
 input{
-	align-items: center;
-	font: 20px;
-	font-family: serif;
-    border-color: #5a4166;
+	font-size: 20px;
+	font-family: 'Sofia';
+	color: whitesmoke;
+    border-color: black;
 	border-radius: 10%;
-    display: block;
-	margin: auto;
+	border-style: double;
+	background-color: darkblue;
+    display: block;	
 }
 
 .accedi{padding-top: 20px;}
