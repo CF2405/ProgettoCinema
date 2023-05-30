@@ -73,7 +73,7 @@
                     <tr><input class="input_dati_personali" type="password" name="password" <?php echo "value = '$password'" ?> required></tr>
         
                     <tr>Re-enter password:</tr>
-                    <tr><input class="input_dati_personali" type="password" name="conferma" <?php echo "value = '$conferma'" ?> required></tr>
+                    <tr><input class="input_dati_personali" type="conferma" name="conferma" <?php echo "value = '$conferma'" ?> required></tr>
                     <tr><p>Password must be at least 6 characters.</p></tr> 
                 </tr>
             </table>
@@ -81,7 +81,52 @@
                 <input type="submit" value="Invia">
             </p>
         </form>
+    <p>
+            <?php
+            if(isset($_POST["username"]) and isset($_POST["password"])) {
+                if ($_POST["username"] == "" or $_POST["password"] == "") {
+                    echo "username e password non possono essere vuoti!";
+                } elseif ($_POST["password"] != $_POST["conferma"]){
+                    echo "Le password inserite non corrispondono";
+                } else {
+                    $conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
+                    if($conn->connect_error){
+                        die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
+                    }
 
+                   $myquery = "SELECT username 
+						    FROM utente 
+						    WHERE username='$username'";
+                    //echo $myquery;
+
+                    $ris = $conn->query($myquery) or die("<p>Query fallita!</p>");
+                    if ($ris->num_rows > 0) {
+                        echo "Questo username è già stato usato";
+                    } else {
+
+                        $myquery = "INSERT INTO $tipologia (username, password, nome, cognome, email, telefono, comune, indirizzo)
+                                    VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
+
+
+                        if ($conn->query($myquery) === true) {
+                            session_start();
+                            $_SESSION["username"]=$username;
+                            $_SESSION["tipologia"]=$_POST["tipologia"];
+                            
+						    $conn->close();
+
+                            echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
+                            header('Refresh: 5; URL=home.php');
+
+                        } else {
+                            echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
+                        }
+                    
+                    }
+                }
+            }
+            ?>
+        </p>
     </div>
     <?php 
         error_reporting(E_ALL ^ E_WARNING);

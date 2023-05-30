@@ -1,12 +1,12 @@
 html,body {
-    border: #333;
-    color:black;
     margin-top: 25px;
     margin-bottom: auto;
     align-items: center;
-    background-image: url(../immagini/romance-movies-opener-01-scaled.jpg);
     max-width: 1500px;
+    /*background-image: url(../immagini/immaignesfondo.jpg);*/
 }
+
+  
 
 .container{
     display: flex;
@@ -48,6 +48,7 @@ h2{
     text-align: center;
     margin-top: 0;
     font-family: sans-serif;
+    color: rgb(238, 35, 35); 
 }
 
 form {
@@ -59,6 +60,8 @@ form {
     border-style: dashed;
     margin: 30px auto;
     align-items: center;
+    font-family: sans-serif;
+    color: solid black; 
 }
 
 .tab_dati_personali{ 
@@ -68,10 +71,10 @@ form {
 }
 input {
 	font: 14px 'Open Sans', sans-serif;
-    border: 2px solid #ccc;
+    border: 2px solid #b0aaaa;
     padding: 6px;
     display: block;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
     width: 96%;
 }
 button {
