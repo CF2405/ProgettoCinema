@@ -12,7 +12,7 @@
     if(isset($_POST["indirizzo"])) $indirizzo = $_POST["indirizzo"];  else $indirizzo = "";
     if(isset($_POST["città"])) $città = $_POST["città"];  else $città = "";
     if(isset($_POST["data_nascita"])) $data_nascita = $_POST["data_nascita"];  else $data_nascita = "";
-    if(isset($_POST["tipologia"])) $tipologia = $_POST["tipologia"];  else $tipologia = "utenti";
+    if(isset($_POST["tipologia"])) $tipologia = $_POST["tipologia"];  else $tipologia = "utente";
 ?>
 
 <!DOCTYPE html>
@@ -39,13 +39,11 @@
 
 <div class="container_table">
 
-
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <table id="tab_dati_personali">
-
                     <tr>scegli un username:</tr>
                     <tr><input class="input_dati_personali" type="text" name="username" <?php echo "value = '$username'" ?> required></tr>
-
+                    
                     <tr>nome:</tr>
                     <tr><input class="input_dati_personali" type="text" name="nome" <?php echo "value = '$nome'" ?> required></tr>
 
@@ -77,70 +75,17 @@
                     <tr>Re-enter password:</tr>
                     <tr><input class="input_dati_personali" type="password" name="conferma" <?php echo "value = '$conferma'" ?> required></tr>
                     <tr><p>Password must be at least 6 characters.</p></tr> 
-                  
                 </tr>
             </table>
             <p style="text-align: center">
                 <input type="submit" value="Invia">
             </p>
         </form>
-        <p>
-            <?php
-            if(isset($_POST["username"]) and isset($_POST["password"])) {
-                if ($_POST["username"] == "" or $_POST["password"] == "") {
-                    echo "username e password non possono essere vuoti!";
-                } elseif ($_POST["password"] != $_POST["conferma"]){
-                    echo "Le password inserite non corrispondono";
-                } else {
-                    $conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
-                    if($conn->connect_error){
-                        die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
-                    }
 
-                    $myquery = "SELECT username 
-						    FROM utente
-						    WHERE username='$username'";
-                    //echo $myquery;
-
-                    $ris = $conn->query($myquery) or die("<p>Query fallita!</p>");
-                    if ($ris->num_rows > 0) {
-                        echo "Questo username è già stato usato";
-                    } else {
-
-                        $myquery = "INSERT INTO $tipologia (username, password, nome, cognome, email, telefono, comune, indirizzo)
-                                    VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
-
-                        /*
-                        // Versione con l'uso dell'hash
-                        $password_hash = password_hash($password, PASSWORD_DEFAULT);
-
-                        $myquery = "INSERT INTO utenti (username, password, nome, cognome, email, telefono, comune, indirizzo)
-                                    VALUES ('$username', '$password_hash', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
-                        */
-
-                        if ($conn->query($myquery) === true) {
-                            session_start();
-                            $_SESSION["username"]=$username;
-                            $_SESSION["tipologia"]=$_POST["tipologia"];
-                            
-						    $conn->close();
-
-                            echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
-                            header('Refresh: 5; URL=home.php');
-
-                        } else {
-                            echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
-                        }
-                    }
-                }
-            }
-            ?>
-        </p>
     </div>
     <?php 
-        error_reporting(E_ALL ^ E_WARNING); // metodo globale ^ significa tranne e funziona da qui in poi
+        error_reporting(E_ALL ^ E_WARNING);
 		include('footer.php');
-		// @include('footerrr.php');  // con @ evito la generazione di warnings o errors da parte della funzione
 	?>
 </body>
 
