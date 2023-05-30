@@ -20,56 +20,32 @@
 </head>
 
 <body>
-	<div class="nav">
-		<div class="centratonav">
-			<ul class="navlinks">
-				<li><a href="pagine/registrazione.php">Registrati</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="contenuto">
-		<h1>GiCa & CO Online</h1>
-		<h2>Pagina di Login</h2>
 
+	<div class="contenuto">
+		
+		<div class="titoli">
+			<h1>GiCa & Co</h1>
+			<h2>Benvenuto nella pagina di Login!</h2>
+		</div>
+		
 		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
 			<table class="tab_input">
 				<tr>
 					<td>Username:</td> <td><input type="text" name="username" value="<?php echo $username; ?>" required></td>
 				</tr>
 				<tr>
-					<td>Password:</td> <td><input type="password" name="password" value="<?php /*echo $password; */?>" required></td>
+					<td>Password:</td> <td><input type="password" name="password" value="<?php echo $password; ?>" required></td>
 				</tr>
 			</table>
-			<p><input type="submit" value="ACCEDI"></p>
+			<div class="accedi"><input type="submit" value="ACCEDI"></div>	
 		</form>
-		<?php
-			if (isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["tipologia"])) {
-				$conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
-				if($conn->connect_error){
-					die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
-				}
 
-				$myquery = "SELECT username, password 
-							FROM $tipologia 
-							WHERE username='$username'
-								AND password='$password'";
-
-				$ris = $conn->query($myquery) or die("<p>Query fallita! ".$conn->error."</p>");
-
-				if($ris->num_rows == 0){
-					echo "<p>Utente non trovato o password errata</p>";
-					$conn->close();
-				} 
-				else {
-					echo "<p>Utente trovato</p>";
-				}
-			}
-
-		?>	
 	</div>
 
 	<?php 
 		include('pagine/footer.php')
 	?>
+
 </body>
+
 </html>

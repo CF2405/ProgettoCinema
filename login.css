@@ -1,58 +1,49 @@
 * {
     box-sizing: border-box;
-}
-
+}	
 body {
-	padding: 0px;
-	margin: 0px;
-	font-family: 'Open Sans', Verdana, 'DejaVu Sans', Arial, sans-serif;
-	background-color: #e2cced;
+	background-image: url("https://www.xtrafondos.com/wallpapers/resoluciones/23/superman-adios-fanart_1280x720_11421.jpg");
+	font-family: 'Open Sans', Verdana, 'DejaVu Sans', Arial, sans-serif; 
+    border-radius: 20px;
+    border: 2px black;
+    border-style: groove;
+	margin: 180px;
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-bottom: 50px;
 }
-/*nav è la banda sopra viola scuro*/
-.nav {
-	background-color: #5a4166;
-	border-bottom: 1.5px solid #e2cced;
-	box-shadow: 0px 1px 4px black;
-}
-/*centronav è la scritta della banda sopra*/
-.centratonav{
-	width:550px;
-	margin: auto;
-	padding: 10px;
+.titoli{
 	text-align: center;
+	font-family: monospace;
+	font-stretch: expanded;
+	font-size: 23px;
 }
 /*contenuto è il contenuto del body*/
 .contenuto {
-	width: 550px;
-	margin: auto;
-	padding: 15px;
-	text-align: center;
-	padding-bottom: 35px;
+	align-items: center;
+	margin-top: 100px;
 }
 .tab_input{
-	text-align: left;
+	text-align: center;
+	margin-top: 70px;
+	padding-left: 350px;
+	margin-block-start: 40px;
+	font-size: 20px;
+}
+/*bottone accedi*/
+input{
+	align-items: center;
+	font: 20px;
+	font-family: serif;
+    border-color: #5a4166;
+	border-radius: 10%;
+    display: block;
 	margin: auto;
 }
-.input_dati_personali{
-	width: 300px;
-}
-input{
-	font-family: 'Open Sans', Verdana, 'DejaVu Sans', Arial, sans-serif;
-}
-/*font della scritta REGISTRATI*/
-ul.navlinks{
-	font-weight: bold;
-	padding-left: 0px;
-}
-ul.navlinks li {
-	display: inline;
-	margin: 10px;
-}
-/*font della scritta REGISTRATI*/
-ul.navlinks li a{
-	text-decoration: none;
-	color: #e2cced;
-}
+
+.accedi{padding-top: 20px;}
+
+
 
 
 
