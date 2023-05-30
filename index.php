@@ -1,3 +1,8 @@
+<?php
+    require_once("dati/dati_connesione_db.php");
+    new mysqli("localhost", "root", "", "php_film_database");
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,6 +85,9 @@
             </div>
             <div class="romantico">
                 <a href="pagine/registrazione.php">ROMANTICO</a>
+            </div>
+            <div class="romantico">
+                <a href="pagine/ricercafilm.php">ROMANTICO</a>
             </div>
         </section>
     </div>

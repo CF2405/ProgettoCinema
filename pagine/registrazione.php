@@ -3,8 +3,8 @@
 	session_start();
 
 	require("../dati/daticonnetti_db.php");
-    if(isset($_POST["username"])) $username = $_POST["username"];  else $username = "";
-    if(isset($_POST["password"])) $password = $_POST["password"];  else $password = "";
+    if(isset($_POST["nome"])) $nome = $_POST["nome"];  else $nome = "";
+    if(isset($_POST["annonascita"])) $annonascita = $_POST["annonascita"];  else $annonascita = "";
 
 ?>
 
@@ -22,10 +22,8 @@
         <form method="post" action="/php/register.php">
             <h1>REGISTRAZIONE UTENTE</h1>
             <p>Inserisci i tuoi dati. Username e password sono obbligatori per la registrazione. Tutti i dati tranne l'userneme saranno modificabili successivamente</p>
-            <input type="text" id="username" placeholder="Username" name="username" maxlength="50" required>
-            <input type="password" id="password" placeholder="Password" name="password" required>
-            <input type="codicefiscale" id="codicefiscale" placeholder="codicefiscale" name="codicefiscale" required>
-            <input type="telfono" id="telefono" placeholder="telefono" name="telefono" required>
+            <input type="text" id="username" placeholder="Username" name="nome" maxlength="50" required>
+            <input type="password" id="password" placeholder="Password" name="annonascita" required>
             <button type="submit" name="register">Registrati</button>
         </form>
     </body>

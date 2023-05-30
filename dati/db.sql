@@ -25,6 +25,19 @@ CREATE TABLE IF NOT EXISTS `attori` (
   PRIMARY KEY (`codattore`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=26790 DEFAULT CHARSET=utf8mb4;
 
+-- Dump della struttura di tabella biblioteca.utenti
+CREATE TABLE IF NOT EXISTS `utenti` (
+  `username` char(20) NOT NULL,
+  `password` char(20) NOT NULL,
+  `nome` char(20) DEFAULT NULL,
+  `cognome` char(20) DEFAULT NULL,
+  `email` char(20) DEFAULT NULL,
+  `telefono` char(20) DEFAULT NULL,
+  `comune` char(20) DEFAULT NULL,
+  `indirizzo` char(40) DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabella contenente gli username e le rispettive password';
+
 -- Dump dei dati della tabella film.attori: ~18 rows (circa)
 DELETE FROM `attori`;
 /*!40000 ALTER TABLE `attori` DISABLE KEYS */;
