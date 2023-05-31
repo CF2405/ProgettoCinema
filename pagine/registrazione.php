@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../pagine/styleregistrazione.css">
+        <link rel="stylesheet" href="../pagine/style_registrazione.css">
     </head>
     
     <body>
@@ -41,6 +41,9 @@
 
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <table id="tab_dati_personali">
+
+                <p>inserisci i tuoi dati per registrarti, la password è obbligatoria così come l'username.</p>
+                    
                     <tr>scegli un username:</tr>
                     <tr><input class="input_dati_personali" type="text" name="username" <?php echo "value = '$username'" ?> required></tr>
                     
@@ -74,11 +77,11 @@
         
                     <tr>Re-enter password:</tr>
                     <tr><input class="input_dati_personali" type="conferma" name="conferma" <?php echo "value = '$conferma'" ?> required></tr>
-                    <tr><p>Password must be at least 6 characters.</p></tr> 
+                    <tr><p>la password deve essere difficile! inserire almeno 6 caratteri.</p></tr> 
                 </tr>
             </table>
             <p style="text-align: center">
-                <input type="submit" value="Invia">
+                <input type="submit" value="Conferma">
             </p>
         </form>
     <p>
