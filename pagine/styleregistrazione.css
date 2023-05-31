@@ -3,7 +3,6 @@ html,body {
     margin-bottom: auto;
     align-items: center;
     max-width: 1500px;
-    /*background-image: url(../immagini/immaignesfondo.jpg);*/
 }
 
   
@@ -29,6 +28,7 @@ logo{
 logo img{ 
     display: inline-block;
     width: 100%;
+    z-index: 12;
 }
 h1{
     display:inline-block; 
