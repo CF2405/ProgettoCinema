@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="styleindex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -50,8 +50,6 @@
             </div>
             <div class="carousel-cell">
                 <a href="pagine/horror.php"><img src="immagini/it-film (1).png" alt=""></a>
-            </div>
-
             </div>
             <div class="carousel-cell">
                 <a href="pagine/commedia.php"><img src="immagini/legallyblonde.jpg" alt=""></a>
