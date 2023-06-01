@@ -35,10 +35,18 @@
                     </li>     
                 </nav>
             </header>
+            
+    <body>
+
+    <div class="cont__video">
+            <div class="cont__video__container">
+                <iframe width="100%" height="600px"src="https://www.youtube.com/embed/8g18jFHCLXk" title="YouTube video player" frameborder="0"></iframe>
+            </div>
         </div>
-
-    <div class="container-centrale">
-
+    </div>
+        
+            <div class="container-centrale">
+    <h1>BENVENUTI SU GICAandCO</h1>
         <h1>I FILM AMATI</h1>
 
         <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
@@ -86,6 +94,9 @@
             </div>
             <div class="romantico">
                 <a href="pagine/login.php">ROMANTICO</a>
+            </div>
+            <div class="romantico">
+                <a href="pagine/biglietto.php">ROMANTICO</a>
             </div>
         </section>
     </div>
