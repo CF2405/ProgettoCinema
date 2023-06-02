@@ -33,7 +33,7 @@
                     <h1>GICAandCO</h1>
                     <img src="../immagini/logo.jpg" alt="" class="logo"  width="60" height="60">
                     <h2>Create your first account</h2>
-        </div> 
+    </div> 
         
 </div>
 
