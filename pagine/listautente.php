@@ -5,8 +5,6 @@ require("../dati/dati_connesione_db.php");
 if(isset($_POST["titolo"])){$titolo=$_POST["titolo"]; } else{$titolo=""; }
 if(isset($_POST["username"])){$username=$_POST["username"]; } else{$username=""; }
 if(isset($_POST["conferma"])){$conferma=$_POST["conferma"]; } else{$conferma=""; }
-
-
 ?>
 
 <!DOCTYPE html>

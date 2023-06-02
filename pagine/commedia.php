@@ -1,6 +1,3 @@
-<?php
-    
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +19,7 @@
                 <div class="card__copy">
                     <a href="../pagine/trama.php#la rivincita" >La rivincita delle bionde</a>
                 </div>
-                <button type="submit" name="add" > <a href="../pagine/biglietti.php">Aquista</a></button>
+                <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
             </div>
             </form>
             <div class="card">
