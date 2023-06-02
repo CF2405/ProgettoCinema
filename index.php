@@ -98,6 +98,9 @@
             <div class="romantico">
                 <a href="pagine/biglietto.php">ROMANTICO</a>
             </div>
+            <div class="romantico">
+                <a href="pagine/home.php">ROMANTICO</a>
+            </div>
         </section>
     </div>
     
