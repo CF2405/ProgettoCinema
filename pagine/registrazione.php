@@ -58,7 +58,13 @@
                     
                     <tr>data di nascita:</tr>
                     <tr><input type="text" class="input_dati_personali" name="data_nascita" <?php echo "value = '$data_nascita'" ?>></tr>
-
+                    
+                    <tr> <select name="sex" required>
+                    <option value="" selected disabled> sesso
+                    <option value="M">Maschio
+                    <option value="F">Femmina
+                    <option value="N">ne femmina ne maschio
+                    </select> <br></tr>
                     <tr>città:</tr>
                     <tr><input type="text" class="input_dati_personali" name="città" <?php echo "value = '$città'" ?>></tr>
 
