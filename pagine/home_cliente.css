@@ -2,14 +2,12 @@ html,body {
     margin-top: 25px;
     margin-bottom: auto;
     align-items: center;
-    max-width: 1500px;
+    /*max-width: 1500px;*/
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 300px;
-    margin: 0 auto;
 }
 logo{
     flex-direction: center;
@@ -35,6 +33,43 @@ logo img{
     margin-bottom: 0;
     
 }
+.topnav{
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: red;
+  }
+.column {
+    float: left;
+    width: 33.3%;
+  }
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div.column img {
+    width: 100%;
+    object-fit: cover;
+  }
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
 .buttonspan{
     display: flex;
 }
@@ -64,9 +99,7 @@ logo img{
     color: white;
   }
 .gallery{
-    display: flex;
-    
-    
+    display: flex;   
 }
 div.gallery {
     margin: 5px;
