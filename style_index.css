@@ -1,12 +1,14 @@
 * {box-sizing: border-box; font-family: "Poppins", sans-serif; margin:0; padding: 0;}
-body{ overflow-x: hidden; min-height: 1500px;}
+body{ overflow-x: hidden; min-height: 1500px; background-color: whitesmoke;}
 
 .container-pagina {max-width: 1500px;}
 
+/* da aggiungere: i film in evidenza e delle caselle che ti collegano ai generi e aggiungere ai generi l'header e il footer*/
+
 /*header*/
-header {display: flex; flex-wrap: nowrap; justify-content: space-between;  top: 0; right: 0; left: 0;  width:100%;}
-.logo{padding: 5px 5px; width: 100px; z-index: 100;}
-header nav ul{ list-style: none; text-align: center; padding: 10px 10px; width: 100%; max-width: 1500px; margin: auto auto; padding: 0; top: 100%;}
+header {background:rgb(235, 11, 11);display: flex; flex-wrap: nowrap; justify-content: space-between;  top: 0; right: 0; left: 0;  width:100%;}
+.logo{padding: 5px 5px; width: 100px;}
+header nav ul{ list-style: none; text-align: center; padding: 10px 10px; width: 100%; max-width: 1200px; margin: auto auto; padding: 0; top: 100%; }
 header nav ul ul{display: none; position: absolute; z-index: 3;}
 header nav ul li{position: relative; text-align: center; z-index: 3;}
 header nav ul li:hover ul{display: block;}
@@ -17,8 +19,12 @@ header nav ul ul li a{font-size: 1rem; }
 header nav ul li:hover a{background: white; color: rgb(155, 2, 2); text-decoration: none; transition: 0.5s; z-index: 3;}
 header nav ul ul li:hover a{background: rgb(155, 2, 2); color:white; z-index: 3;}
 
-h1{text-align: center; margin-top: 40px; font-weight: bolder;}
+.container-centrale {width: 100%;}
 
+logo{ flex-direction: center;margin: auto auto; }
+logo img{ display: inline-block;width: 100%;z-index: 12;}
+h1{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 55px; text-align: center; color: rgb(235, 11, 11);}
+h2{text-align: center;}
 /*slider*/
 .main-carousel{padding: 40px 0;}
 .carousel-cell{height: 350px; width: 350px; }
@@ -42,7 +48,7 @@ h1{text-align: center; margin-top: 40px; font-weight: bolder;}
 
 
 /*footer*/
-.footer{ background: black ; padding: 4px 4px; color: white; width: 100%;}
+.footer{ background: rgb(105, 98, 98) ; padding: 4px 4px; color: white; width: 100%;}
 .footer img{height: 60px; width:50px;}
 .footer__content {list-style: none; display: flex;align-items: right; justify-content: center; flex-direction: column; text-align: center;}
 .footer__content h2{text-align: center; padding: 4px;}
@@ -54,6 +60,9 @@ h1{text-align: center; margin-top: 40px; font-weight: bolder;}
 .footer__bootom { padding: 14px 0px; text-align: center; margin-top: 8px;}
 .footer__bootom p{word-spacing: 2px; text-transform: capitalize;}
 .footer__bootom span{text-transform: uppercase; opacity: 0.4;}
+
+
+
 
 /*Telefono*/
 @media screen and (max-width: 767px){

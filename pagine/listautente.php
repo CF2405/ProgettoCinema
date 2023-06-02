@@ -13,22 +13,24 @@ if(isset($_POST["conferma"])){$conferma=$_POST["conferma"]; } else{$conferma="";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pagine/listautente.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-<h1>LA PAGINA DEDICATA ALL'UTENTE:</h1>
+    <h1>LA PAGINA DEDICATA ALL'UTENTE:</h1>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <table id="tab_dati_personali">
-                <h1>ACCEDERE AL PROPRIO ACCOUNT:</h1>
-                <p>questo campo è importante per verificare l'identità della persona che desidera comprare
-                    un biglietto.</p>
-                    <tr>
-					<td>Username:</td> <td><input type="text" name="username" value="<?php echo $username; ?>" required></td>
-				</tr>
-				<tr>
-					<td>Password:</td> <td><input type="password" name="password" value="" required></td>
-				</tr>
+                <h2>ACCEDERE AL PROPRIO ACCOUNT:</h2>
+                <h4>questo campo è importante per verificare l'identità della persona che desidera comprare
+                    un biglietto.</h4>
+                   
+                    <tr>username:</tr>
+                    <tr><input type="text" name="username" <?php echo "value = '$username'" ?> required></tr>
+                    
+                    <tr>password:</tr>
+                    <tr><input type="password" name="password" value="" required></tr>
+
             </table>
             <p style="text-align: center">
                 <input type="submit" value="ACCEDI">
@@ -59,7 +61,7 @@ if(isset($_POST["conferma"])){$conferma=$_POST["conferma"]; } else{$conferma="";
 
 		?>	
         </form>
-        </div> 
+        </div>
         <div class="container_liste">
         <h1>LISTA DEI FILM COMPRATI DALL'UTENTE:</h1>
         <?php
@@ -92,5 +94,6 @@ if(isset($_POST["conferma"])){$conferma=$_POST["conferma"]; } else{$conferma="";
         }
         ?>
         </div>
+
 </body>
 </html>
