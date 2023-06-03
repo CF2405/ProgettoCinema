@@ -1,20 +1,15 @@
 <?php
 	session_start();
-	//echo session_id();
-
 	require('../data/dati_connessione_db.php');
-
 	if(!isset($_SESSION['username'])){
 		header('location: ../index.php');
 	}
 	if( $_SESSION["tipologia"]!="utenti"){
 	    header('location: logout.php');
 	}
-
 	$username = $_SESSION["username"];
-	//echo $username;
 
-	$strabilita = "Sblocca"; // il nome della variabile è basato sulla logica del programma, il valore è solo quello che viene scritto nel pulsante
+	$strabilita = "Sblocca";
 	$strblocca = "Modifica";
 
 	$conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
@@ -28,7 +23,6 @@
             $modifica = false;
             $val_pulsante = $strabilita;
 		}
-
 		if ($modifica == false){
 			$sql = "UPDATE utenti
 					SET password = '".$_POST["password"]."', 
@@ -39,11 +33,7 @@
 						comune = '".$_POST["comune"]."', 
 						indirizzo = '".$_POST["indirizzo"]."' 
 					WHERE username = '".$username."'";
-			if($conn->query($sql) === true) {
-				//echo "Record updated successfully";
-			} else {
-				echo "Error updating record: " . $conn->error;
-			}
+			if($conn->query($sql) === true)  else {echo "Error updating record: " . $conn->error;}
 		}
 	}
 ?>
@@ -65,9 +55,7 @@
 			$sql = "SELECT username, password, nome, cognome, email, telefono, comune, indirizzo 
 				FROM utenti 
 				WHERE username='".$username."'";
-			//echo $sql;
 			$ris = $conn->query($sql) or die("<p>Query fallita!</p>");
-			// $row = $ris->fetch_array(MYSQLI_ASSOC);
 			$row = $ris->fetch_assoc();
 		?>
 		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
@@ -102,8 +90,5 @@
 			</p>
 		</form>	
 	</div>	
-	<?php 
-		include('footer.php')
-	?>
 </body>
 </html>

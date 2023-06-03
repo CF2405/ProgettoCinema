@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pagine/stylegeneri.css">
+    <link rel="stylesheet" href="../pagine/style_generi.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Genere: Romantico</title>
 </head>
@@ -17,7 +17,7 @@
                 </div>
                 <nav>
                     <ul>
-                    <li><a href="../pagine/index.php">HOME</a></li> 
+                    <li><a href="../index.php">HOME PAGE</a></li> 
                     <li><a href="#">GENERI</a>
                     <ul>
                     <li><a href="../pagine/romantico.php">ROMANTICO</a></li>
@@ -37,56 +37,65 @@
         <div class="card">
             <img class="card__image" src="../immagini/harrytipresentosally.jpg" alt="Harry ti presento Sally">
             <div class="card__copy">
-                <a href="../pagine/trama.html#Harry ti presento Sally">Harry ti presento Sally</a>
+                <a href="../pagine/trama.php#Harry ti presento Sally">Harry ti presento Sally</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/tutti-insieme-appassionatamente.jpg" alt="tutti insieme appassionatamente">
             <div class="card__copy">
-                <a href="../pagine/trama.html#Tutti insieme appassionatamente" >Tutti insieme appassionatamente</a>
+                <a href="../pagine/trama.php#Tutti insieme appassionatamente" >Tutti insieme appassionatamente</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/se-mi-lasci-ti-cancello.jpg" alt="Se mi lasci ti cancello">
             <div class="card__copy">
-                <a href="../pagine/trama.html#Se mi lasci ti cancello" >Se mi lasci ti cancello</a>
+                <a href="../pagine/trama.php#Se mi lasci ti cancello" >Se mi lasci ti cancello</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/pretty-woman.jpg" alt="Pretty Woman">
             <div class="card__copy">
-                <a href="../pagine/trama.html#Pretty Woman" >Pretty Woman</a>
+                <a href="../pagine/trama.php#Pretty Woman" >Pretty Woman</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/lei.jpg" alt="Lei">
             <div class="card__copy">
-                <a href="../pagine/trama.html#Lei" >Lei</a>
+                <a href="../pagine/trama.php#Lei" >Lei</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/labellaelabestia.jpg" alt="La bella e la bestia">
             <div class="card__copy">
-                <a href="../pagine/trama.html#La Bella e la Bestia" >La bella e la bestia</a>
+                <a href="../pagine/trama.php#La Bella e la Bestia" >La bella e la bestia</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/il_postino.jpg" alt="Il Postino">
             <div class="card__copy">
-                <p><a href="../pagine/trama.html#Il Postino" >Il Postino</a></p>
+                <p><a href="../pagine/trama.php#Il Postino" >Il Postino</a></p>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/harold-and-maude-1971.jpg" alt="Harold e Maude">
             <div class="card__copy">
-                <a href="../pagine/trama.html#Harold e Maude" >Harold e Maude</a>
+                <a href="../pagine/trama.php#Harold e Maude" >Harold e Maude</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
         <div class="card">
             <img class="card__image" src="../immagini/titanic.jpg" alt="Titanic">
             <div class="card__copy">
-                <a href="../pagine/trama.html#titanic" >Titanic</a>
+                <a href="../pagine/trama.php#titanic" >Titanic</a>
             </div>
+            <button type="submit" name="add" ><a href="../pagine/listautente.php">LISTA</a> </button>
         </div>
     </section>
     <footer class="footer">
