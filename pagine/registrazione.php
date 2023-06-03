@@ -41,7 +41,7 @@
 
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <table id="tab_dati_personali">
-                <p><a href="index.php">Torna alla pagina Home</a></p>
+                <p><a href="../index.php">Torna alla pagina Home</a></p>
                 <p><a href="../pagine/login_utente.php">possiedi già un account? login</a></p>
                 <h2>REGISTRAZIONE:</h2>
                 <p>inserisci i tuoi dati per registrarti, la password è obbligatoria così come l'username.</p>
