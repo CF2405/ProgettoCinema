@@ -1,6 +1,21 @@
 *{box-sizing: border-box; font-family: "Poppins", sans-serif;}
-body {background-color: #f8f1ff;}
+body{ overflow-x: hidden; min-height: 1500px; background-color: whitesmoke; margin-top: 0; margin-left: 0; margin-right: 0; }
 html, body{height: 100%; width: 100%;}
+
+header {background:rgb(235, 11, 11);display: flex; flex-wrap: nowrap; justify-content: space-between;  top: 0; right: 0; left: 0;  width:100%;}
+.logo{padding: 5px 5px; width: 100px;}
+header nav ul{ list-style: none; text-align: center; padding: 10px 10px; width: 100%; max-width: 1200px; margin: auto auto; padding: 0; top: 100%; }
+header nav ul ul{display: none; position: absolute; z-index: 3;}
+header nav ul li{position: relative; text-align: center; z-index: 3;}
+header nav ul li:hover ul{display: block;}
+header nav ul li li{position: relative; float: none; width: 100%; border: none; z-index: 3;}
+header nav ul li a{display: block; text-decoration: none; color: white; box-sizing: border-box;
+font-size: 1.2em;padding: 15px 20px; z-index: 3;}
+header nav ul ul li a{font-size: 1rem; }
+header nav ul li:hover a{background: white; color: rgb(155, 2, 2); text-decoration: none; transition: 0.5s; z-index: 3;}
+header nav ul ul li:hover a{background: rgb(155, 2, 2); color:white; z-index: 3;}
+button{width: 20%;}
+button a{text-decoration: none;}
 
 h1{
   text-align: center; 
