@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../pagine/style_registrazione.css">
+        <link rel="stylesheet" href="../pagine/stylelogin.css">
     </head>
     
     <body>
@@ -42,7 +42,7 @@
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <table id="tab_dati_personali">
                 <p><a href="index.php">Torna alla pagina Home</a></p>
-                <p><a href="../pagine/login.php">possiedi già un account? login</a></p>
+                <p><a href="../pagine/login_utente.php">possiedi già un account? login</a></p>
                 <h2>REGISTRAZIONE:</h2>
                 <p>inserisci i tuoi dati per registrarti, la password è obbligatoria così come l'username.</p>
                 <p>INFORMAZIONI PERSONALI: </p>

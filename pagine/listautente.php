@@ -56,6 +56,7 @@ if(isset($_POST["conferma"])){$conferma=$_POST["conferma"]; } else{$conferma="";
 				} 
 				else {
 					echo "<p>Utente trovato</p>";
+                    header('location: logout.php');
 				}
 			}
 
