@@ -129,7 +129,6 @@
     </div>
     <?php 
         error_reporting(E_ALL ^ E_WARNING);
-		include('footer.php');
 	?>
 </body>
 
