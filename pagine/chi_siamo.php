@@ -9,26 +9,26 @@
 </head>
     <body>
     <div class="container-pagina">
-        <header>
-            <div class="logo">
-                <img src="../immagini/logo.jpg" alt="" class="logo">
-            </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="../index.html">HOME PAGE</a></li> 
+            <header>
+                <div class="logo">
+                    <img src="../immagini/logo.jpg" alt="" class="logo">
+                </div>
+                <nav>
+                    <ul>
+                    <li><a href="../index.php">HOME PAGE</a></li> 
                     <li><a href="#">GENERI</a>
                     <ul>
-                        <li><a href="pagine/romantico.html">ROMANTICO</a></li>
-                        <li><a href="pagine/avventura.html">AVVENTURA</a></li>
-                        <li><a href="pagine/commedia.html">COMMEDIA</a></li>
-                        <li><a href="pagine/fantascienza.html">FANTASCENZA</a></li>
-                        <li><a href="pagine/horror.html">HORROR</a></li>
+                    <li><a href="../pagine/romantico.php">ROMANTICO</a></li>
+                    <li><a href="../pagine/avventura.php">AVVENTURA</a></li>
+                    <li><a href="../pagine/commedia.php">COMMEDIA</a></li>
+                    <li><a href="../pagine/fantascienza.php">FANTASCENZA</a></li>
+                    <li><a href="../pagine/horror.php">HORROR</a></li>
                     </ul>
                     </li>     
-                </ul>
-            </nav>
-        </header>
+                </nav>
+                <button><a href="../pagine/registrazione.php">ACCEDI</a></button>
+            </header>
+        </div>
 
             <div class="cover">
                 <div class="cover-filter"> </div>
