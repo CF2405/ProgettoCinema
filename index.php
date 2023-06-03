@@ -83,6 +83,7 @@
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                     <li><a href="#"><i class="fa fa-yahoo"></i></a></li>
+                    <li><a href="pagine/home_cliente.php"><i class="fa fa-home"></i></a></li>
                 </ul>
                 <p>Per maggiori informazioni contattateci al numero: <b> +39 345 023 39999 </b>e scriveteci alle mail: <U>@yahoo.it - GICAandCO@gmail.com</U></p>
             </div>
