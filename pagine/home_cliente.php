@@ -12,6 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="home_cliente.css">
     <title>Home personale</title>
 
@@ -66,21 +68,33 @@
             </div>
         </div>
     </div>
-   
-    <h1>I FILM PIU' POPOLARI DI QUESTA SETTIMANA</h1>
-
-    <div class="gallery">
-        <img src="https://www.mariocastle.it/news/wp-content/uploads/2023/04/copertina-super-mario-bros-il-film.jpg" alt="">
-        <img src="https://www.teamworld.it/wp-content/uploads/2022/04/Animali-Fantastici-I-Segreti-di-Silente-poster-del-film.jpg" alt="">
-        <img src="https://pad.mymovies.it/filmclub/2019/11/085/covermd_home.jpg" alt="">
-        <img src="https://www.sorrisi.com/wp-content/uploads/2022/07/the-lost-city-886x494.jpg" alt="">
-        <img src="https://www.spyit.it/wp-content/uploads/2022/06/Little_Mermaid_Poster-la-sirenetta.jpg" alt="">
-    </div>
-
-  
     
+    <div class="container-centrale">
+        <h1>I FILM PIU' POPOLARI DI QUESTA SETTIMANA</h1>
 
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="carousel-cell">
+                <img src="https://www.mariocastle.it/news/wp-content/uploads/2023/04/copertina-super-mario-bros-il-film.jpg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="https://www.teamworld.it/wp-content/uploads/2022/04/Animali-Fantastici-I-Segreti-di-Silente-poster-del-film.jpg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="https://pad.mymovies.it/filmclub/2019/11/085/covermd_home.jpg" alt="">
+            </div>
 
+            <div class="carousel-cell">
+                <img src="https://www.sorrisi.com/wp-content/uploads/2022/07/the-lost-city-886x494.jpg" alt="">
+            </div>
+            <div class="carousel-cell">
+                <img src="https://www.spyit.it/wp-content/uploads/2022/06/Little_Mermaid_Poster-la-sirenetta.jpg" alt="">
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"></script>
+
+    </div>
 
 
 
