@@ -1,10 +1,3 @@
-<?php
-    require("../dati/dati_connesione_db.php");
-	if (isset($_POST["username"])) {$username = $_POST["username"];} else {$username = "";}
-	if (isset($_POST["password"])) {$password = $_POST["password"];} else {$password = "";}
-	if (isset($_POST["tipologia"])) {$tipologia = $_POST["tipologia"];} else {$tipologia = "";}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,30 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css">
-    <link rel="stylesheet" type="text/css" href="home_cliente.css">
+    <link rel="stylesheet" type="text/css" href="../pagine/homecleinte.css">
     <title>Home personale</title>
 
 </head>
 <body>
 <div class="container">
-    <div class="centronav">
-        <div class="logo">
-                    <img src="../immagini/logo.jpg" alt="" class="logo" width="60" height="60" >
-                    <h1 class="titolo">GICAandCO</h1>
-                    <img src="../immagini/logo.jpg" alt="" class="logo"  width="60" height="60">
-        </div> 
-       
-        <div class="topnav">
-            <a href="pagine\logout.php" >Log Out</a>
-            <a href="index.php" >Home Page</a>
-        </div>   
-    </div>            
+<header>
+                <div class="logo">
+                    <img src="../immagini/logo.jpg" alt="" class="logo">
+                </div>
+                <nav>
+                    <ul>
+                    <li><a href="../pagine/chi_siamo.php">CHI SIAMO?</a></li> 
+                    <li><a href="#">GENERI</a>
+                    <ul>
+                    <li><a href="../pagine/romantico.php">ROMANTICO</a></li>
+                    <li><a href="../pagine/avventura.php">AVVENTURA</a></li>
+                    <li><a href="../pagine/commedia.php">COMMEDIA</a></li>
+                    <li><a href="../pagine/fantascienza.php">FANTASCENZA</a></li>
+                    <li><a href="../pagine/horror.php">HORROR</a></li>
+                    </ul>
+                    </li>     
+                </nav>
+                <button><a href="pagine/registrazione.php">ACCEDI</a></button>
+            </header>         
 </div>
 
-
+<section class="cards">
     <div class="row">
         <div class="column">
-            <h2>Inizia a guardare: 'Oppenheimer'</h2>
+            
             <img src="https://upload.wikimedia.org/wikipedia/it/thumb/4/4a/Oppenheimer_%28film%29.jpg/1200px-Oppenheimer_%28film%29.jpg" alt="">
             <p>Il film segue la vita del fisico Robert Oppenheimer, manager del Los Alamos Laboratory durante il progetto Manhattan, che ha portato alla creazione della prima bomba atomica</p>
             <div class="buttonspan">
@@ -95,6 +95,31 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css"></script>
 
     </div>
+      
+    <footer class="footer">
+            <center>
+                <img src="../immagini/logo.jpg" alt="">
+            </center>
+            <div class="footer__content">
+                <h2>GICAandCO</h2>
+                <h4> Caterina Ferrera  &  Giorgia Parma </h4>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-yahoo"></i></a></li>
+                </ul>
+                <p>Per maggiori informazioni contattateci al numero: <b> +39 345 023 39999 </b>e scriveteci alle mail: <U>@yahoo.it - GICAandCO@gmail.com</U></p>
+            </div>
+            <div class="footer__bootom">
+                <p>copyright &copy; 2012 GICAandCO. designed by <span>nethunt</span></p>
+            </div>
+        </footer>
+    
+</body>
+</html>
+
 
 
 
