@@ -37,14 +37,14 @@ if(isset($_POST["conferma"])){$conferma=$_POST["conferma"]; } else{$conferma="";
             </p>
 
             <?php
-			if (isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["tipologia"])) {
+			if (isset($_POST["username"]) and isset($_POST["password"])) {
 				$conn = new mysqli($db_servername,$db_username,$db_password,$db_name);
 				if($conn->connect_error){
 					die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
 				}
 
 				$myquery = "SELECT username, password 
-							FROM $tipologia 
+							FROM $utente 
 							WHERE username='$username'
 								AND password='$password'";
 
