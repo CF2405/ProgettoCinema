@@ -6,7 +6,6 @@ html,body {
 }
 
 .centronav{
-
     display: flex;
     flex-wrap: wrap;
 
@@ -108,8 +107,8 @@ div.column img {
 h1{
     font-family: "Audiowide", sans-serif;
 }
-.container-centrale {width: 100%;}
-.main-carousel{padding: 40px 0;}
+.container-centrale {width: 100%; margin-top: 50px;}
+.main-carousel{padding: 40px 0; background-color: #f0dadb;}
 .carousel-cell{height: 350px; width: 350px; }
 .carousel-cell img{width: 99%; height: 95%; object-fit: cover;}
 .flickity-page-dots{padding-top: 0;}
