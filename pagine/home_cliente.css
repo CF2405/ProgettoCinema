@@ -4,7 +4,6 @@ html,body {
     align-items: center;
     max-width: 1500px;
 }
-
 .centronav{
     display: flex;
     flex-wrap: wrap;
@@ -17,8 +16,7 @@ logo{
 logo img{ 
     display: inline-block;
     width: 100%;
-    z-index: 12;
-    
+    z-index: 12;   
 }
 .titolo{
     display:inline-block; 
@@ -35,8 +33,7 @@ logo img{
 }
 .topnav{
   padding-left: 170px;
-  padding-top: 30px;
-  
+  padding-top: 30px; 
 }
 .topnav a {
     float: left;
@@ -72,6 +69,7 @@ div.column img {
 @media screen and (max-width:600px) {
   .column {
     width: 100%;
+    flex-wrap: nowrap;
   }
 }
 
