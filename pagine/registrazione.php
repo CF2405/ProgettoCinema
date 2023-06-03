@@ -12,7 +12,6 @@
     if(isset($_POST["indirizzo"])) $indirizzo = $_POST["indirizzo"];  else $indirizzo = "";
     if(isset($_POST["città"])) $città = $_POST["città"];  else $città = "";
     if(isset($_POST["data_nascita"])) $data_nascita = $_POST["data_nascita"];  else $data_nascita = "";
-    if(isset($_POST["tipologia"])) $tipologia = $_POST["tipologia"];  else $tipologia = "utente";
 ?>
 
 <!DOCTYPE html>
@@ -107,7 +106,7 @@
                     }
                 
                    $myquery = "SELECT username, password 
-						    FROM $tipologia 
+						    FROM $utente 
 						    WHERE username='$username'
                             AND password='$password'"; 
                     //echo $myquery;
@@ -131,6 +130,4 @@
         error_reporting(E_ALL ^ E_WARNING);
 	?>
 </body>
-
- 
 </html>

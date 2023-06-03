@@ -2,7 +2,6 @@
     require("../dati/dati_connesione_db.php");
 	if (isset($_POST["username"])) {$username = $_POST["username"];} else {$username = "";}
 	if (isset($_POST["password"])) {$password = $_POST["password"];} else {$password = "";}
-	if (isset($_POST["tipologia"])) {$tipologia = $_POST["tipologia"];} else {$tipologia = "";}
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +47,7 @@
 				}
 
 				$myquery = "SELECT username, password 
-							FROM $tipologia 
+							FROM $utente 
 							WHERE username='$username'
 								AND password='$password'";
 
