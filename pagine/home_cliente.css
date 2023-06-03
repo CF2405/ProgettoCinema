@@ -2,12 +2,13 @@ html,body {
     margin-top: 25px;
     margin-bottom: auto;
     align-items: center;
-    /*max-width: 1500px;*/
+    max-width: 1500px;
 }
 
 .centronav{
     display: flex;
     flex-wrap: wrap;
+    background-color: beige;
 
 }
 logo{
