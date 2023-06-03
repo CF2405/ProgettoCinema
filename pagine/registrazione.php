@@ -105,13 +105,12 @@
                         die("<p>Connessione al server non riuscita: ".$conn->connect_error."</p>");
                     }
                 
-                   $myquery = "SELECT username, password 
-						    FROM $utente 
-						    WHERE username='$username'
-                            AND password='$password'"; 
-                    //echo $myquery;
+                    $query = "SELECT utente.username, utente.password 
+                    FROM utente 
+                    WHERE username='$username' AND password='$password'";
 
-                    $ris = $conn->query($myquery) or die("<p>Query fallita! ".$conn->error."</p>");
+
+                    $ris = $conn->query($query) or die("<p>Query fallita! ".$conn->error."</p>");
 
                     if($ris->num_rows == 0){
                         echo "<p>Utente non trovato o password errata</p>";
