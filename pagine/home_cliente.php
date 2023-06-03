@@ -30,7 +30,7 @@
                     </ul>
                     </li>     
                 </nav>
-                <button><a href="pagine/registrazione.php">ACCEDI</a></button>
+                <button><a href="../pagine/registrazione.php">ACCEDI</a></button>
             </header>         
 </div>
 
