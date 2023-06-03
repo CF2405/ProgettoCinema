@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css">
-    <link rel="stylesheet" type="text/css" href="../pagine/homecleinte.css">
+    <link rel="stylesheet" type="text/css" href="../pagine/homecliente.css">
     <title>Home personale</title>
 
 </head>
@@ -37,7 +37,7 @@
 <section class="cards">
     <div class="row">
         <div class="column">
-            
+        <h2>Inizia a guardare: 'Oppenheimer'</h2>
             <img src="https://upload.wikimedia.org/wikipedia/it/thumb/4/4a/Oppenheimer_%28film%29.jpg/1200px-Oppenheimer_%28film%29.jpg" alt="">
             <p>Il film segue la vita del fisico Robert Oppenheimer, manager del Los Alamos Laboratory durante il progetto Manhattan, che ha portato alla creazione della prima bomba atomica</p>
             <div class="buttonspan">
