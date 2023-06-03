@@ -52,7 +52,7 @@ if(isset($_POST["conferma"])){$conferma=$_POST["conferma"]; } else{$conferma="";
 
 				if($ris->num_rows == 0){
 					echo "<p>Utente non trovato o password errata</p>";
-					$conn->close();c
+					$conn->close();
 				} 
 				else {
 					echo "<p>Utente trovato</p>";
