@@ -2,23 +2,21 @@ html,body {
     margin-top: 25px;
     margin-bottom: auto;
     align-items: center;
-    /*max-width: 1500px;*/
+    max-width: 1500px;
 }
-
-.container{
+.centronav{
     display: flex;
     flex-wrap: wrap;
+    background-color: beige;
+
 }
 logo{
-    flex-direction: center;
-    margin: auto auto; 
-    
+    flex-direction: center;  
 }
 logo img{ 
     display: inline-block;
     width: 100%;
-    z-index: 12;
-    
+    z-index: 12;   
 }
 .titolo{
     display:inline-block; 
@@ -34,15 +32,15 @@ logo img{
     
 }
 .topnav{
-  padding-left: 50px;
-  padding-top: 30px;
+  padding-left: 170px;
+  padding-top: 30px; 
 }
 .topnav a {
     float: left;
     display: block;
     color: black;
     text-align: center;
-    padding: 30px 30px;
+    padding: 30px;
     text-decoration: none;
   }
   
@@ -54,21 +52,26 @@ logo img{
     float: left;
     width: 33.3%;
   }
-
+.row{
+  margin-top: 20px;
+  background-color: #f0dadb;
+}
 .row::after {
     content: "";
     display: table;
     clear: both;
   }
-  div.column img {
+div.column img {
+  width: 98%;
+  max-height: 100px;
+  object-fit: cover;
+}
+@media screen and (max-width:600px) {
+  .column {
     width: 100%;
-    object-fit: cover;
+    flex-wrap: nowrap;
   }
-  @media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
-  }
+}
 
 .buttonspan{
     display: flex;
@@ -79,6 +82,7 @@ logo img{
     border: 2px solid red;
     font-size: 30px;
     margin: 50px 15px;
+    font-size: 15px;
   }
   
 .button1:hover {
@@ -92,32 +96,25 @@ logo img{
     border: 2px solid red;
     font-size: 30px;
     margin: 50px 15px;
+    font-size: 15px;
   }
   
 .button2:hover {
     background-color: red;
     color: white;
   }
-.gallery{
-    display: flex;   
+h1{
+    font-family: "Audiowide", sans-serif;
 }
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 100;
-  }
-  
-div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-div.gallery img {
+.container-centrale {width: 100%; margin-top: 50px;}
+.main-carousel{padding: 40px 0; background-color: #f0dadb;}
+.carousel-cell{height: 350px; width: 350px; }
+.carousel-cell img{width: 99%; height: 95%; object-fit: cover;}
+.flickity-page-dots{padding-top: 0;}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
     width: 100%;
-    height: auto;
   }
-  
-div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+}
